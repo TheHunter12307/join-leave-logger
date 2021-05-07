@@ -1,0 +1,38 @@
+This is the explanation File for the options.json File
+
+"html" is a Boolean and can be true or false.
+If set to true, the output will be a propperly formatted line
+If set to false, all options inside the "html" ""category"" are disabled
+
+"htmlobject-class-join" determines the class used in a the generated HTML output if a player joined the game
+
+"htmlobject-class-leave" determines the class used in a the generated HTML output if a player left the game
+
+"string-start" is a String used in the generated message before the playername is inserted into the outputted Line
+
+"string-join-end" is a String used in the generated message after the playername is inserted into the outputted Line if a player joined the Game
+
+"string-leave-end" is a String used in the generated message after the playername is inserted into the outputted Line if a player left the Game
+
+"timeout-after-error" is an Integer which determines the time to wait before continuing with the programm after an error ocurred
+
+"timeout-after-run" is an Integer which determines the time to wait before continuing with the programm after an a run is finished
+
+"IncludeTime" is a Boolean and can be true or false
+If set to true, the uptput will contain the current time
+If set to false, the output won´t contain the current time
+The Current time is oriented by the system time of the system the script is being run on
+
+"serverip" is a String... I think you know what belongs here
+"servername" is a String and is used to name the logfile. The name generated would look like this
+[servername].log
+
+"logfilenameUseIP" is a Boolean
+If set to false (default), the name of the lokfile would look like this [servername].log
+If set to true, the name of the logfile would look like this [servername]_[serverip].log
+
+The output format if html is enabled would look somthing like this:
+<p class="[htmlobject-class-leave/join]">[time (looks like: Year-Month-Day Minute:Second)] + [string-start] + [playername] + [string-leave/join-end]</p>
+
+If html is disabled it would look something like this:
+[time (looks like: Year-Month-Day Minute:Second)] + [string-start] + [playername] + [string-leave/join-end]

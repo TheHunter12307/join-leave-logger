@@ -1,0 +1,17 @@
+{
+    "html": {
+        "html": true,
+        "htmlobject-class-join": "PlayerJoinEvent",
+        "htmlobject-class-leave": "PlayerLeaveEvent"
+    },
+    "string-start": "",
+    "string-join-end": "joined the game.",
+    "string-leave-end": "left the game.",
+    "timeout-after-run": 30,
+    "timeout-after-error": 120,
+    "IncludeTime": "true",
+    "serverip": "",
+    "servername": "",
+    "logfilenameUseIP": true,
+    "logfileExtension": ".log"
+}
